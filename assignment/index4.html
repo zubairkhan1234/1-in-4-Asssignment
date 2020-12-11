@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a rendom Number in Array</title>
+</head>
+<body>
+
+
+    <div>
+        <h1 id="1"></h1>
+        <h1 id="2"></h1>
+        <h1 id="3"></h1>
+        <h1 id="4"></h1>
+    </div>
+    
+
+
+    <script>
+
+         let arr = [41, 32, 23, 14, 55, 66, 77, 889, 99, 12, 123, 234,]
+        // document.getElementById("2").innerText =  arr
+        function callNumber(arr) {
+            let b = arr[Math.ceil(Math.random() * arr.length)]
+            return b
+        }
+        // console.log(callNumber(arr));
+        // console.log(callNumber(arr));
+        // console.log(callNumber(arr));
+        // console.log(callNumber(arr));
+
+        document.getElementById("1").innerText = callNumber(arr)
+        // document.getElementById("2").innerText = callNumber(arr)
+        // document.getElementById("3").innerText = callNumber(arr)
+        // document.getElementById("4").innerText = callNumber(arr)
+    </script>
+    
+</body>
+</html>

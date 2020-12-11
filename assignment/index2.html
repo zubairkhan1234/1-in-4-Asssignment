@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>it is Prime number or not</title>
+</head>
+<body>
+
+    
+
+
+
+
+    <script>
+         let number = prompt("type a number for checking it is Prime number or not")
+
+        function evenOrNote(number) {
+            var prime = number != 0;
+            for (var i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    prime = false;
+                    break;
+                }
+            }
+            return prime;
+        }
+
+        let a = evenOrNote(number);
+        // console.log(a)
+        alert(a)
+
+
+    </script>
+</body>
+</html>

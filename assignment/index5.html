@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+        let name = +prompt("Enter a Name");
+
+        function count(userInput) {
+            var vowel_list = 'aeiouAEIOU';
+            var vlue = 0;
+
+            for (var x = 0; x < userInput.length; x++) {
+                if (vowel_list.indexOf(userInput[x]) !== -1) {
+                    vcount++;
+                }
+            }
+            return vcount;
+        }
+        var userInput = prompt("Enter a word")
+        alert("Total vowels in given string is " + count(userInput));
+    </script>
+</body>
+</html>
